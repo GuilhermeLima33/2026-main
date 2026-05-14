@@ -1,0 +1,35 @@
+/* Estilo base */
+div, p {
+    width: 150px;
+    height: 80px;
+    border: 2px solid black;
+    margin: 10px;
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;
+    vertical-align: top;
+}
+
+/* Ex 2 */
+.ativo {
+    background-color: yellow;
+}
+
+/* Ex 4 e 5 */
+.rosa {
+    background-color: pink; /* rosa claro */
+    color: darkred;         /* texto rosa escuro */
+}
+
+/* Ex 6 e 7 */
+.destaque {
+    background-color: blue;
+    color: white;
+    border: 5px solid cyan;
+}
+
+/* Ex 8 e 9 */
+.active {
+    background-color: black;
+    color: white;
+}

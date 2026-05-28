@@ -5,7 +5,8 @@ let mensagem = document.getElementById("mensagem")
 confirmar.addEventListener("input", function() {
 
 let numeros = /[0-9]/.test(senha.value)
-let letras = /[a-zA-Z]/.test(senha.value)
+let letras = /[a-z]/.test(senha.value)
+let letras2 = /[A-Z]/.test(senha.value)
 let especial = /[!@#$%&*]/.test(senha.value)
 let tamanho = senha.value.length >= 12
 
@@ -19,12 +20,12 @@ let tamanho = senha.value.length >= 12
     //     mensagem.classList.add("errado") 
     // }
 
-    if(senha.value == confirmar.value && numeros && letras && especial && tamanho){
+    if(senha.value == confirmar.value && numeros && letras && especial && tamanho && letras2){
         mensagem.innerText = "As senhas são iguais"
         mensagem.classList.add("certo")
         mensagem.classList.remove("errado")
     }else{
-        mensagem.innerText = "As senhas precisa ter letras, números, caracter especial, ter no mínimo 10 caracteres e ser igual"
+        mensagem.innerText = "As senhas precisa ter letras maíusculas , números, caracter especial, ter no mínimo 12 caracteres e ser igual"
         mensagem.classList.remove("certo")
         mensagem.classList.add("errado") 
     }

@@ -1,0 +1,9 @@
+.pergunta{
+background-color: rgb(180, 180, 180);
+cursor:pointer;
+margin: 20px 0;
+}
+.resposta{
+background-color: lightgray;
+display: none;
+}

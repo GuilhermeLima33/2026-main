@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pixel Studio de Fotografia | Ensaios Premium</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="site">
+        <header class="cabecalho">
+            <a href="#topo" class="marca">
+                <img class="logo" src="img/Captura_de_tela_2026-06-11_143321-removebg-preview.png" alt="Logo Estúdio Pixel" />
+            </a>
+            <nav class="navegacao">
+                <a href="#servicos">Serviços</a>
+                <a href="#carrossel">Galeria</a>
+                <a href="#depoimentos">Depoimentos</a>
+                <a href="#faq">Dúvidas</a>
+                <a href="#contato" class="botao-nav">Agendar</a>
+            </nav>
+        </header>
+
+        <section class="hero">
+            <div class="hero-texto">
+                <span class="tagline">Estúdio de fotografia premium</span>
+                <h1>Ensaio em estúdio ou no destino dos seus sonhos</h1>
+                <p>O Pixel Studio registra cada momento com qualidade cinematográfica. Além do nosso complexo em São Paulo, nossa equipe viaja com você para capturar sua essência em qualquer lugar do mundo.</p>
+                <div class="hero-botoes">
+                    <a href="#contato" class="botao destaque">Quero agendar uma sessão</a>
+                    <a href="#servicos" class="botao secundario">Conhecer serviços</a>
+                </div>
+            </div>
+            <div class="hero-imagem"></div>
+        </section>
+
+        <section class="estatisticas">
+            <div class="estatisticas-header">
+                <span class="tagline">Números que inspiram</span>
+                <h2>O impacto do Pixel Studio</h2>
+                <p class="estatisticas-subtitulo">Mais de uma década criando memórias profissionais para clientes no estúdio e em destinos especiais.</p>
+            </div>
+            <div class="estatisticas-grid">
+                <div class="bloco-estatistica">
+                    <strong class="valor" data-target="10">0</strong>
+                    <span>Anos de Experiência</span>
+                </div>
+                <div class="bloco-estatistica">
+                    <strong class="valor" data-target="1000">0</strong>
+                    <span>Clientes Atendidos</span>
+                </div>
+                <div class="bloco-estatistica">
+                    <strong class="valor" data-target="15">0</strong>
+                    <span>Países Visitados</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="servicos" class="servicos-section">
+            <div class="secao-titulo">
+                <span>O que fazemos</span>
+                <h2>Serviços Exclusivos</h2>
+            </div>
+            <div class="servicos-grid">
+                <div class="servico-card">
+                    <div class="icon">📸</div>
+                    <h2>Estúdio Profissional</h2>
+                    <p>Infraestrutura de ponta com iluminação de última geração, camarim privativo e cenários minimalistas ou temáticos adaptáveis.</p>
+                </div>
+                <div class="servico-card">
+                    <div class="icon">✈️</div>
+                    <h2>Destination Photography</h2>
+                    <p>Planejamento logístico completo para fotografar você no destino dos seus sonhos — praias, montanhas ou capitais históricas.</p>
+                </div>
+                <div class="servico-card">
+                    <div class="icon">✨</div>
+                    <h2>Atendimento VIP</h2>
+                    <p>Direção de pose especializada, consultoria de figurino pré-ensaio e tratamento de imagem artístico de alto padrão.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="carrossel" class="carrossel">
+            <div class="secao-titulo">
+                <span>Portfólio de Elite</span>
+                <h2>Celebridades no Pixel Studio</h2>
+            </div>
+            <div class="slides-container">
+                <div class="slides">
+                    <div class="slide ativo">
+                        <img src="img/download.jpg" alt="Guilherme Lima Grau" />
+                        <div class="slide-info">
+                            <h3>Guilherme Lima Grau</h3>
+                            <p>Ensaio urbano com luz natural e expressão autoral para editorial fashion.</p>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="img/download%20(1).jpg" alt="Robson 67" />
+                        <div class="slide-info">
+                            <h3>Robson 67</h3>
+                            <p>Retrato impactante para campanha de lifestyle com estilo e atitude.</p>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="img/download%20(2).jpg" alt="Lucas do Drift" />
+                        <div class="slide-info">
+                            <h3>Lucas do Drift</h3>
+                            <p>Produção dinâmica em movimento, capturando performance e velocidade.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="dots">
+                    <button class="dot ativo" data-index="0"></button>
+                    <button class="dot" data-index="1"></button>
+                    <button class="dot" data-index="2"></button>
+                </div>
+            </div>
+        </section>
+
+        <section id="depoimentos" class="depoimentos">
+            <div class="secao-titulo">
+                <span>Histórias Reais</span>
+                <h2>O que dizem nossos clientes</h2>
+            </div>
+            <div class="depoimentos-grid">
+                <div class="depoimento-card">
+                    <p>"Contratei o Pixel Studio para fazer minhas fotos na Grécia. A equipe foi impecável, cuidou de tudo e o resultado superou todas as expectativas!"</p>
+                    <div class="autor">
+                        <img src="img/usuario.png" alt="Cliente">
+                        <div>
+                            <h4>Fernanda Lima</h4>
+                            <span>Ensaio em Santorini</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="depoimento-card">
+                    <p>"O estúdio em São Paulo é maravilhoso, super confortável. Mas fazer o ensaio externo na Avenida Paulista com a direção deles foi uma experiência única."</p>
+                    <div class="autor">
+                        <img src="img/usuario.png" alt="Cliente">
+                        <div>
+                            <h4>Rodrigo Santoro</h4>
+                            <span>Ensaio Urbano</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="sobre">
+            <div class="sobre-texto">
+                <span class="tagline">Nossa Filosofia</span>
+                <h2>Seu ensaio com estilo, estrutura e liberdade total</h2>
+                <p>Nossa sede conta com ambientes climatizados, equipamentos de iluminação de padrão global e um atendimento humanizado para que você se sinta em casa.</p>
+                <p class="endereco-destaque">📍 Localização: Rua Aureliano Guimarães, 172 - Sala 719 - Vila Andrade, São Paulo / SP.</p>
+            </div>
+            <div class="sobre-imagem"></div>
+        </section>
+
+        <section id="faq" class="faq">
+            <div class="secao-titulo">
+                <span>Dúvidas Comuns</span>
+                <h2>Perguntas Frequentes</h2>
+            </div>
+            <div class="faq-lista">
+                <div class="faq-item">
+                    <button class="faq-pergunta">Como funciona o ensaio em outras cidades/países?</button>
+                    <div class="faq-resposta">
+                        <p>Nossa equipe faz todo o planejamento junto com você. O orçamento incluirá a taxa do ensaio mais os custos de deslocamento e hospedagem da equipe de forma transparente.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-pergunta">Qual o prazo de entrega das fotos editadas?</button>
+                    <div class="faq-resposta">
+                        <p>Enviamos uma prévia em até 48 horas após o ensaio. A galeria completa e tratada em alta resolução é entregue em até 15 dias úteis.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contato" class="contato">
+            <div class="contato-texto">
+                <span class="tagline">Reserve sua data</span>
+                <h2>Vamos planejar seu próximo registro?</h2>
+                <p>Preencha os dados ao lado. Se a sua escolha for um destino externo, nossa equipe entrará em contato para alinhar os detalhes logísticos e criar um roteiro sob medida para você.</p>
+            </div>
+            <form id="form-cadastro" class="form-contato">
+                <label>Nome completo
+                    <input type="text" name="nome" placeholder="Ex: Ana Silva" required>
+                </label>
+                <div class="form-grupo">
+                    <label>E-mail
+                        <input type="email" name="email" placeholder="seu@email.com" required>
+                    </label>
+                    <label>Telefone
+                        <input type="tel" name="telefone" placeholder="(11) 99999-9999" required>
+                    </label>
+                </div>
+                <fieldset class="tipo-sessao">
+                    <legend>Onde será seu ensaio?</legend>
+                    <div class="radio-opcoes">
+                        <label><input type="radio" name="tipo" value="Estúdio" checked> No Estúdio Pixel</label>
+                        <label><input type="radio" name="tipo" value="Local"> Em uma Locação / Destino</label>
+                    </div>
+                </fieldset>
+                
+                <div id="campo-destino" class="campo-animado">
+                    <label>Destino desejado
+                        <input type="text" name="destino" id="input-destino" placeholder="Ex: Rio de Janeiro, Paris, Praia..." required>
+                    </label>
+                </div>
+
+                <button type="submit" class="botao enviar">Enviar Solicitação de Agendamento</button>
+                <p id="mensagem-sucesso" class="mensagem-sucesso" aria-live="polite"></p>
+            </form>
+        </section>
+
+        <footer class="rodape">
+            <p>© 2026 Pixel Studio de Fotografia. Todos os direitos reservados.</p>
+            <p class="sub-rodape">Rua Aureliano Guimarães, 172 - Sala 719 - Vila Andrade, São Paulo - SP</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

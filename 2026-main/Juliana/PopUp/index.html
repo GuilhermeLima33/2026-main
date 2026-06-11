@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Popups Interativos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <div class="secao">
+            <h1>1. Popup de Login</h1>
+            <p>Usuário, senha e botão entrar</p>
+            <button class="btn-abrir" onclick="abrirPopUp()">Abrir PopUp</button>
+        </div>
+
+        <div class="popup" id="popup">
+            <div class="overlay" onclick="fecharPopUp()"></div>
+            <div class="conteudo">
+                <span class="fechar" onclick="fecharPopUp()">&times;</span>
+                <h2>LOGIN</h2>
+                <input type="text" id="usuario" placeholder="Usuário..." required>
+                <br><br>
+                <input type="password" id="senha" placeholder="Senha..." required>
+                <br><br>
+                <button onclick="fazerLogin()">Entrar</button>
+            </div>
+        </div>
+        <br><br>
+
+        
+        <div class="secao">
+            <h1>2. Popup de Confirmação</h1>
+            <p>Pergunta ao usuário com opções Sim e Não</p>
+            <button class="btn-abrir" onclick="abrirPopUp2()">Abrir PopUp</button>
+        </div>
+
+        <div class="popup" id="popup2">
+            <div class="overlay" onclick="fecharPopUp2()"></div>
+            <div class="conteudo">
+                <span class="fechar" onclick="fecharPopUp2()">&times;</span>
+                <h2>Confirmação</h2>
+                <p id="mensagemConfirmacao">Deseja realmente excluir este item?</p>
+                <div class="botoes-confirmacao">
+                    <button class="btn-sim" onclick="confirmarSim()">Sim</button>
+                    <button class="btn-nao" onclick="confirmarNao()">Não</button>
+                </div>
+            </div>
+        </div>
+        <br><br>
+
+      
+        <div class="secao">
+            <h1>3. Popup com Imagem</h1>
+            <p>Clique em uma imagem pequena para ampliá-la</p>
+            <img src="Fusão Nuclear.png" alt="Imagem pequena" class="imagem-pequena" onclick="abrirPopUp3()">
+        </div>
+
+        <div class="popup" id="popup3">
+            <div class="overlay" onclick="fecharPopUp3()"></div>
+            <div class="conteudo-imagem">
+                <span class="fechar" onclick="fecharPopUp3()">&times;</span>
+                <img src="Fusão Nuclear.png" alt="Imagem ampliada" class="imagem-ampliada">
+            </div>
+        </div>
+        <br><br>
+
+       
+        <div class="secao">
+            <h1>4. Popup de Curiosidade</h1>
+            <p>Frases, curiosidades ou mensagens aleatórias</p>
+            <button class="btn-abrir" onclick="abrirPopUp4()">Ver Curiosidade</button>
+        </div>
+
+        <div class="popup" id="popup4">
+            <div class="overlay" onclick="fecharPopUp4()"></div>
+            <div class="conteudo">
+                <span class="fechar" onclick="fecharPopUp4()">&times;</span>
+                <h2>Mensagem do Dia</h2>
+                <p id="curiosidade"></p>
+                <button onclick="fecharPopUp4()">Fechar</button>
+            </div>
+        </div>
+        <br><br>
+
+       
+        <div class="secao">
+            <h1>5. Popup de Aviso</h1>
+            <p>Validar senha e exibir popup de sucesso ou erro</p>
+            <div class="formulario-login">
+                <input id="usuario5" type="text" placeholder="Usuário..." required>
+                <br><br>
+                <input id="senha5" type="password" placeholder="Senha..." required>
+                <br><br>
+                <small>Senha correta: <strong>senha123</strong></small>
+                <br><br>
+                <button class="btn-abrir" onclick="validarSenha5()">Entrar</button>
+            </div>
+        </div>
+
+        <div class="popup" id="popup5Sucesso">
+            <div class="overlay" onclick="fecharPopUp5Sucesso()"></div>
+            <div class="conteudo sucesso">
+                <span class="fechar" onclick="fecharPopUp5Sucesso()">&times;</span>
+                <h2>Parabéns!</h2>
+                <p>Senha correta. Bem-vindo!</p>
+                <button onclick="fecharPopUp5Sucesso()">Fechar</button>
+            </div>
+        </div>
+
+        <div class="popup" id="popup5Erro">
+            <div class="overlay" onclick="fecharPopUp5Erro()"></div>
+            <div class="conteudo erro">
+                <span class="fechar" onclick="fecharPopUp5Erro()">&times;</span>
+                <h2>Erro</h2>
+                <p>Senha incorreta. Tente novamente.</p>
+                <button onclick="fecharPopUp5Erro()">Fechar</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="scrip.js"></script>
+</body>
+</html>
